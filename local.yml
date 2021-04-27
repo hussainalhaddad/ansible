@@ -11,8 +11,8 @@
  
  
 - hosts: localhost
-  become: yes
-  become_user: hussain
+  #become: yes
+  #become_user: hussain
   tasks:
   - name: Chnage the wallpaper
     dconf:
