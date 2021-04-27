@@ -10,12 +10,12 @@
       group: root
  
  
- - hosts: localhost
-   become: yes
-   become_user: hussain
-   tasks:
-   - name: Chnage the wallpaper
-     dconf:
-       key: "/org/gnome/desktop/background/picture-uri"
-       value: "'file:///usr/share/backgrounds/ansible_wallpaper.jpg'"
-       state: present
+- hosts: localhost
+  become: yes
+  become_user: hussain
+  tasks:
+  - name: Chnage the wallpaper
+    dconf:
+      key: "/org/gnome/desktop/background/picture-uri"
+      value: "'file:///usr/share/backgrounds/ansible_wallpaper.jpg'"
+       tate: present
