@@ -9,7 +9,7 @@
       group: root
     
   - name: Chnage the wallpaper
-     dconf:
+    dconf:
       user: 'hussain'
       key: "/org/gnome/desktop/background/picture-uri"
       value: "file:///usr/share/backgrounds/ansible_wallpaper.jpg"
