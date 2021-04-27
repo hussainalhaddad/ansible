@@ -9,6 +9,7 @@
       owner: root
       group: root
     
+    become_user: hussain
   - name: Chnage the wallpaper
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
