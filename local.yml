@@ -18,4 +18,4 @@
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
       value: "'file:///usr/share/backgrounds/ansible_wallpaper.jpg'"
-       tate: present
+      state: present
