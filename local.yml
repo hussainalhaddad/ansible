@@ -14,12 +14,12 @@
   tasks:
   - name: Chnage the wallpaper, theme and icons
     dconf:
-      - key: "/org/gnome/desktop/background/picture-uri"
-        value: "'file:///usr/share/backgrounds/ansible_wallpaper.jpg'"
+      key: "/org/gnome/desktop/background/picture-uri"
+      value: "'file:///usr/share/backgrounds/ansible_wallpaper.jpg'"
       #state: present
-      - key: "/org/gnome/desktop/interface/gtk-theme"
-        value: "'Arc-Dark'"
+      key: "/org/gnome/desktop/interface/gtk-theme"
+      value: "'Arc-Dark'"
       #state: present
-      - key: "/org/gnome/desktop/interface/icon-theme"
-        value: "'TelaBudgie'"
+      key: "/org/gnome/desktop/interface/icon-theme"
+      value: "'TelaBudgie'"
       #state: present
