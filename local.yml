@@ -12,13 +12,11 @@
  
 - hosts: localhost
   tasks:
-  - name: Chnage the wallpaper, theme and icons
+  - name: Chnage the wallpaper theme and icons
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
       value: "'file:///usr/share/backgrounds/ansible_wallpaper.jpg'"
-    dconf:
       key: "/org/gnome/desktop/interface/gtk-theme"
       value: "'Arc-Dark'"
-    dconf:
       key: "/org/gnome/desktop/interface/icon-theme"
       value: "'TelaBudgie'"
