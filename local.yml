@@ -21,14 +21,15 @@
       dest: /tmp/test.sh
       owner: root
       group: root
-      mode: 0777
-
-  - name: test script
-    script:
-      cmd: /tmp/test.sh     
+      mode: 0777   
  
 - hosts: localhost
   tasks:
+  
+  - name: test script
+    script:
+      cmd: /tmp/test.sh  
+      
   - name: Chnage the wallpaper
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
