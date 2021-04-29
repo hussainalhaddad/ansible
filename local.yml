@@ -14,10 +14,17 @@
     package:
       name: virtualbox-guest-dkms,virtualbox-guest-x11,arc-theme
       state: present
-      
+
+  - name: Copy script to tmp before running it
+    copy:
+      src: files/test.sh
+      dest: /tmp/test.sh
+      owner: root
+      group: root
+
   - name: test script
     script:
-      cmd: files/test.sh     
+      cmd: /tmp/test.sh     
  
 - hosts: localhost
   tasks:
