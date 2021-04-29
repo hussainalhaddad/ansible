@@ -15,12 +15,19 @@
       name: virtualbox-guest-dkms,virtualbox-guest-x11,arc-theme,gnome-terminal
       state: present
 
-  - name: Remove snap packages
+  - name: Remove ubuntu-budgie-welcome snap
     snap:
-      name: 
-       - ubuntu-budgie-welcome
-       - core18
-       - snapd
+      name: ubuntu-budgie-welcome
+      state: absent  
+
+  - name: Remove ubuntu-budgie-welcome snap
+    snap:
+      name: core18
+      state: absent  
+
+  - name: Remove ubuntu-budgie-welcome snap
+    snap:
+      name: snapd
       state: absent  
 
   - name: Remove packages
