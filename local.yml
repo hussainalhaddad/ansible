@@ -15,24 +15,24 @@
       name: virtualbox-guest-dkms,virtualbox-guest-x11,arc-theme
       state: present
 
-  - name: Copy script to tmp before running it
-    copy:
-      src: files/test.sh
-      dest: /tmp/test.sh
-      owner: root
-      group: root
-      mode: 0777   
+  #- name: Copy script to tmp before running it
+    #copy:
+      #src: files/test.sh
+      #dest: /tmp/test.sh
+      #owner: root
+      #group: root
+      #mode: 0777   
  
 - hosts: localhost
   tasks:
   
-  - name: test script
-    script: /tmp/test.sh  
+  #- name: test script
+    #script: /tmp/test.sh  
       
-  #- name: Chnage the wallpaper
-#    dconf:
-#      key: "/org/gnome/desktop/background/picture-uri"
-#      value: "'file:///usr/share/backgrounds/ansible_wallpaper.jpg'"
+  - name: Chnage the wallpaper
+    dconf:
+      key: "/org/gnome/desktop/background/picture-uri"
+      value: "'file:///usr/share/backgrounds/ansible_wallpaper.jpg'"
   - name: Chnage the theme
     dconf:      
       key: "/org/gnome/desktop/interface/gtk-theme"
