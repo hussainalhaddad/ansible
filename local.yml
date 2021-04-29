@@ -32,4 +32,4 @@
   - name: disable attached modal
     dconf:      
       key: "/org/gnome/mutter/attach-modal-dialogs"
-      value: "'false'"
+      value: "false"
