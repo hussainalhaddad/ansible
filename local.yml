@@ -28,7 +28,7 @@
   
   - name: test script
     script:
-      cmd: /tmp/test.sh  
+      free_form: /tmp/test.sh  
       
   - name: Chnage the wallpaper
     dconf:
