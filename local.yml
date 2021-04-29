@@ -12,8 +12,13 @@
 
   - name: Install missing packages
     package:
-      name: virtualbox-guest-dkms,virtualbox-guest-x11,arc-theme
+      name: virtualbox-guest-dkms,virtualbox-guest-x11,arc-theme,gnome-terminal
       state: present
+      
+  - name: Remove packages
+    package:
+      name: tilix
+      state: absent      
 
   #- name: Copy script to tmp before running it
     #copy:
