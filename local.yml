@@ -29,10 +29,10 @@
   - name: test script
     script: /tmp/test.sh  
       
-  - name: Chnage the wallpaper
-    dconf:
-      key: "/org/gnome/desktop/background/picture-uri"
-      value: "'file:///usr/share/backgrounds/ansible_wallpaper.jpg'"
+  #- name: Chnage the wallpaper
+#    dconf:
+#      key: "/org/gnome/desktop/background/picture-uri"
+#      value: "'file:///usr/share/backgrounds/ansible_wallpaper.jpg'"
   - name: Chnage the theme
     dconf:      
       key: "/org/gnome/desktop/interface/gtk-theme"
