@@ -14,11 +14,17 @@
     package:
       name: virtualbox-guest-dkms,virtualbox-guest-x11,arc-theme,gnome-terminal
       state: present
-      
+
+  - name: Remove snap packages
+    snap:
+      name: ubuntu-budgie-welcome,core18,snapd
+      state: absent  
+
   - name: Remove packages
     package:
-      name: tilix
+      name: tilix,snapd,gnome-software-plugin-snap
       state: absent      
+
 
   #- name: Copy script to tmp before running it
     #copy:
