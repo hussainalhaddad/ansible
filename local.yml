@@ -77,4 +77,21 @@
   - name: 12h clock2
     dconf:        
       key: "/org/gtk/settings/file-chooser/clock-format"
-      value: "'12h'"        
+      value: "'12h'"
+  - name: panels
+    dconf:        
+      key: "/com/solus-project/budgie-panel/panels"
+      value: "['fbfce6fe-a89a-11eb-90b6-d1c7427925ab', 'd0c48e5c-a8a8-11eb-9fb5-27ac8b39cc61']"
+  - name: panel locatiom
+    dconf:        
+      key: "/com/solus-project/budgie-panel/panels/{d0c48e5c-a8a8-11eb-9fb5-27ac8b39cc61}/location"
+      value: "'bottom'"
+  - name: panel size
+    dconf:        
+      key: "/com/solus-project/budgie-panel/panels/{d0c48e5c-a8a8-11eb-9fb5-27ac8b39cc61}/size"
+      value: "39"
+  - name: panel transparency
+    dconf:        
+      key: "/com/solus-project/budgie-panel/panels/{d0c48e5c-a8a8-11eb-9fb5-27ac8b39cc61}/transparency
+"
+      value: "'none'"
