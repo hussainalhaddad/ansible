@@ -10,9 +10,9 @@
       owner: root
       group: root
 
-  - name: Install missing libraries
+  - name: Install missing packages
     package:
-      name: python3-psutil,arc-theme
+      name: virtualbox-guest-dkms,virtualbox-guest-x11
       state: present
  
 - hosts: localhost
