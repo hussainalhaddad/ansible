@@ -21,6 +21,7 @@
       dest: /tmp/test.sh
       owner: root
       group: root
+      mode: 0777
 
   - name: test script
     script:
