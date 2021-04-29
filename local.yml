@@ -66,11 +66,15 @@
     dconf:      
       key: "/org/gnome/mutter/attach-modal-dialogs"
       value: "false"      
-  - name: test multiple dconf
+  - name: power settings
     dconf:      
       - key: "/org/gnome/desktop/session/idle-delay"
         value: "uint32 0"
+  - name: 12h clock
+    dconf:        
       - key: "/org/gnome/desktop/interface/clock-format"
         value: "12h"
+  - name: 12h clock2
+    dconf:        
       - key: "/org/gtk/settings/file-chooser/clock-format"
         value: "12h"        
