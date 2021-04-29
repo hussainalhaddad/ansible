@@ -2,13 +2,18 @@
 - hosts: localhost
   become: yes
   tasks:
+  
   - name: Copy wallpaper
     copy:
       src: files/ansible_wallpaper.jpg
       dest: /usr/share/backgrounds/ansible_wallpaper.jpg
       owner: root
       group: root
- 
+
+  - name: Install missing libraries
+    package:
+      name: python3-psutil
+      state: present
  
 - hosts: localhost
   tasks:
