@@ -36,4 +36,4 @@
   - name: change layout
     dconf:      
       key: "/com/solus-project/budgie-panel/layout"
-      value: "redmond"
+      value: "'redmond'"
