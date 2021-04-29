@@ -27,8 +27,7 @@
   tasks:
   
   - name: test script
-    script:
-      command: /tmp/test.sh  
+    script: /tmp/test.sh  
       
   - name: Chnage the wallpaper
     dconf:
