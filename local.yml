@@ -17,9 +17,10 @@
 
   - name: Remove snap packages
     snap:
-      name: ubuntu-budgie-welcome
-      name: core18
-      name: snapd
+      name: 
+       - ubuntu-budgie-welcome
+       - core18
+       - snapd
       state: absent  
 
   - name: Remove packages
