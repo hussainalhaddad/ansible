@@ -29,3 +29,7 @@
     dconf:      
       key: "/org/gnome/desktop/interface/icon-theme"
       value: "'TelaBudgie'"
+  - name: disable attached modal
+    dconf:      
+      key: "/org/gnome/mutter/attach-modal-dialogs"
+      value: 'false'
