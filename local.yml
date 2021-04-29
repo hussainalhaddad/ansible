@@ -33,3 +33,7 @@
     dconf:      
       key: "/org/gnome/mutter/attach-modal-dialogs"
       value: "false"
+  - name: change layout
+    dconf:      
+      key: "/com/solus-project/budgie-panel/layout"
+      value: "redmond"
