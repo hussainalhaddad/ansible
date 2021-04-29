@@ -66,7 +66,6 @@
     dconf:      
       key: "/org/gnome/mutter/attach-modal-dialogs"
       value: "false"      
-
   - name: test multiple dconf
     dconf:      
       - key: "/org/gnome/desktop/session/idle-delay"
