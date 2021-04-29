@@ -12,7 +12,7 @@
 
   - name: Install missing libraries
     package:
-      name: python3-psutil
+      name: python3-psutil arc-theme
       state: present
  
 - hosts: localhost
